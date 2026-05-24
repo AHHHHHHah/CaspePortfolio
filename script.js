@@ -247,32 +247,43 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. DYNAMIC PROJECTS FILTER GALLERY
     // ==========================================================================
     const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectFilterSelect = document.getElementById('projectFilterSelect');
     const projectCards = document.querySelectorAll('.project-card');
+
+    function filterProjects(filterValue) {
+        filterButtons.forEach(button => {
+            button.classList.toggle('active', button.getAttribute('data-filter') === filterValue);
+        });
+
+        if (projectFilterSelect) {
+            projectFilterSelect.value = filterValue;
+        }
+
+        projectCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+
+            if (filterValue === 'all' || category === filterValue) {
+                card.style.display = 'flex';
+                card.style.animation = 'none';
+                card.offsetHeight;
+                card.style.animation = 'fadeIn 0.4s ease forwards';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
 
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            const filterValue = btn.getAttribute('data-filter');
-
-            // Remove active state and add to current
-            filterButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            // Filter project cards
-            projectCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                
-                if (filterValue === 'all' || category === filterValue) {
-                    card.style.display = 'flex';
-                    // Trigger reflow for CSS animation
-                    card.style.animation = 'none';
-                    card.offsetHeight; /* trigger reflow */
-                    card.style.animation = 'fadeIn 0.4s ease forwards';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+            filterProjects(btn.getAttribute('data-filter'));
         });
     });
+
+    if (projectFilterSelect) {
+        projectFilterSelect.addEventListener('change', () => {
+            filterProjects(projectFilterSelect.value);
+        });
+    }
 
 
     // ==========================================================================

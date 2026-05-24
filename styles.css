@@ -1018,6 +1018,10 @@ button {
     margin-bottom: 40px;
 }
 
+.project-filter-select-wrap {
+    display: none;
+}
+
 .filter-btn {
     padding: 10px 22px;
     border-radius: 8px;
@@ -1554,6 +1558,9 @@ button {
         flex-direction: column;
         width: 100%;
         max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: stretch;
     }
 
     .hero-cta .btn,
@@ -1562,11 +1569,71 @@ button {
         justify-content: center;
     }
 
+    .about-section.container {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    .about-section .section-header {
+        margin-bottom: 34px;
+    }
+
+    .about-section .section-tag {
+        font-size: 0.68rem;
+        letter-spacing: 1.2px;
+        margin-bottom: 6px;
+    }
+
+    .about-section .section-header h2 {
+        font-size: 1.62rem;
+        line-height: 1.18;
+    }
+
+    .about-grid {
+        gap: 26px;
+    }
+
+    .about-bio h3 {
+        font-size: 1.22rem;
+        line-height: 1.32;
+        margin-bottom: 14px;
+    }
+
+    .about-bio p {
+        font-size: 0.92rem;
+        line-height: 1.55;
+        margin-bottom: 14px;
+    }
+
+    .ojt-target-card {
+        gap: 14px;
+        padding: 14px;
+        align-items: flex-start;
+    }
+
+    .ojt-target-card .card-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .ojt-target-card h4 {
+        font-size: 0.98rem;
+    }
+
+    .ojt-target-card p {
+        font-size: 0.82rem;
+        line-height: 1.35;
+    }
+
     .skills-showcase {
-        padding: 22px;
+        padding: 16px;
+        border-radius: 12px;
     }
 
     .skills-tabs {
+        gap: 6px;
+        margin-bottom: 18px;
         overflow-x: auto;
         padding-bottom: 10px;
         scrollbar-width: none;
@@ -1579,19 +1646,109 @@ button {
     .tab-btn {
         flex: 1 0 auto;
         white-space: nowrap;
+        padding: 7px 10px;
+        font-size: 0.8rem;
     }
 
     .skill-chip-grid {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 8px;
+        margin-bottom: 18px;
+    }
+
+    .skill-chip-grid span {
+        min-height: 40px;
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .skills-bullets {
+        margin-top: 18px;
+        gap: 9px;
+    }
+
+    .skills-bullets li {
+        align-items: flex-start;
+        font-size: 0.82rem;
+        line-height: 1.4;
     }
     
     .hero-network-stats {
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin: 34px auto 0;
+        padding: 12px 16px;
+        max-width: 360px;
+        border-radius: 12px;
     }
-    
+
+    .hero-network-stats::before {
+        content: 'INTERFACE STATUS [UP]';
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        max-width: calc(100% - 28px);
+        text-align: center;
+        white-space: nowrap;
+        font-size: 0.58rem;
+        letter-spacing: 0.5px;
+    }
+
+    .stat-box {
+        min-height: 58px;
+        padding: 10px 2px;
+        border-right: none;
+        border-bottom: 1px solid rgba(226, 135, 67, 0.15);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+    }
+
+    .stat-box:last-child {
+        border-bottom: none;
+    }
+
     .stat-val {
         font-size: 1.8rem;
+    }
+
+    .stat-lbl {
+        margin-top: 0;
+        text-align: right;
+    }
+
+    .project-filters {
+        display: none;
+    }
+
+    .project-filter-select-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: -8px 0 28px;
+    }
+
+    .project-filter-select-wrap label {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--color-signal-blue);
+    }
+
+    .project-filter-select {
+        width: 100%;
+        min-height: 48px;
+        padding: 0 42px 0 14px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        background: var(--bg-surface);
+        color: var(--text-primary);
+        font: inherit;
+        font-weight: 700;
+        box-shadow: var(--shadow-md);
     }
     
     .certs-highlight-grid {
@@ -1608,7 +1765,92 @@ button {
     
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 24px;
+    }
+
+    .contact-section.container {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    .contact-section .section-header {
+        margin-bottom: 32px;
+    }
+
+    .contact-section .section-tag {
+        font-size: 0.68rem;
+        letter-spacing: 1.2px;
+        margin-bottom: 6px;
+    }
+
+    .contact-section .section-header h2 {
+        font-size: 1.62rem;
+        line-height: 1.18;
+    }
+
+    .contact-info h3 {
+        font-size: 1.18rem;
+        line-height: 1.32;
+        margin-bottom: 12px;
+    }
+
+    .contact-info > p {
+        font-size: 0.9rem;
+        line-height: 1.52;
+        margin-bottom: 20px;
+    }
+
+    .contact-details {
+        gap: 14px;
+    }
+
+    .detail-item {
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .detail-item i {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        padding: 9px;
+    }
+
+    .detail-item h5 {
+        font-size: 0.86rem;
+    }
+
+    .detail-item p {
+        font-size: 0.78rem;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-card {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .contact-form {
+        gap: 14px;
+    }
+
+    .form-group {
+        gap: 6px;
+    }
+
+    .form-group label {
+        font-size: 0.76rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.84rem;
+    }
+
+    .form-group textarea {
+        min-height: 120px;
     }
     
     .form-row {
@@ -2033,6 +2275,9 @@ button {
     
     .hero-cta {
         justify-content: center;
+        align-items: stretch;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .hero-profile-container {
@@ -2084,5 +2329,23 @@ button {
     
     .modal-actions {
         flex-direction: column;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .about-section .skill-chip-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-section .skill-chip-grid span {
+        gap: 7px;
+        min-height: 38px;
+        padding: 7px 8px;
+        font-size: 0.74rem;
+    }
+
+    .about-section .skill-chip-grid i {
+        width: 15px;
+        height: 15px;
     }
 }
