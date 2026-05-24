@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris | BSIT Network Specialist Portfolio</title>
+    <meta name="description" content="Portfolio of Chris, a BSIT student specializing in Networking & Full Stack Development. Cisco Certified, seeking a Network-Based OJT position.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Live Network Background Canvas -->
+    <canvas id="networkCanvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">C:\</span>Chris<span class="logo-blink">_</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About & Skills</a>
+                <a href="#certs" class="nav-link">Cisco & Certs</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#terminal" class="nav-link">Cisco CLI</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobileNavToggle" title="Menu" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="open-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" autofocus class="hero-section container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge-container scroll-reveal">
+                        <span class="pulse-badge"><span class="pulse-dot"></span>Active Link</span>
+                        <span class="hardware-badge"><i data-lucide="cpu"></i> Cisco Acad Certified</span>
+                    </div>
+                    <h1 class="hero-title scroll-reveal">
+						Exploring Technology Through <span class="text-gradient">Projects & Innovation</span>
+					</h1>
+                    <p class="hero-subtitle scroll-reveal">
+						BSIT student from Pamantasan ng Lungsod ng Valenzuela (PLV) specializing in networking, full-stack development, and AI-assisted systems. Experienced in developing academic, client, and research-based projects that combine technical innovation with real-world usability.
+					</p>
+                    <div class="hero-cta scroll-reveal">
+                        <a href="assets/chris-caspe-resume.txt" class="btn btn-primary" download>
+                            Download Resume <i data-lucide="download"></i>
+                        </a>
+                        <a href="#terminal" class="btn btn-secondary">
+                            Access Cisco IOS Terminal <i data-lucide="terminal"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Placeholder Container with Network Aesthetics -->
+                <div class="hero-profile-container scroll-reveal">
+                    <div class="profile-frame">
+                        <div class="profile-placeholder">
+                            <img src="assets/Pfp.png" alt="Chris Caspe profile photo" class="profile-photo">
+							<div class="network-radar"></div>
+                        </div>
+                        <div class="profile-stats-overlay">
+                            <span class="ping-time"><i data-lucide="activity"></i> ping: 12ms</span>
+                            <span class="link-speed"><i data-lucide="arrow-up-down"></i> 1.2 Gbps</span>
+                        </div>
+                        <div class="port-glowing-leds">
+                            <span class="led led-green" title="Port 0/1 - UP"></span>
+                            <span class="led led-green" title="Port 0/2 - UP"></span>
+                            <span class="led led-amber" title="Port 0/3 - ACT"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-network-stats scroll-reveal">
+                <div class="stat-box">
+                    <span class="stat-val">2x</span>
+                    <span class="stat-lbl">Cisco Certificates</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-val">6+</span>
+                    <span class="stat-lbl">Deployments</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-val">100%</span>
+                    <span class="stat-lbl">OJT Ready</span>
+                </div>
+            </div>
+            <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to about section">
+                <span class="scroll-line"></span>
+                <span class="scroll-text">Scroll</span>
+                <i data-lucide="chevron-down" class="scroll-icon"></i>
+            </a>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="about-section container">
+            <div class="section-header">
+                <span class="section-tag">PING SUCCESSFUL</span>
+                <h2>Systems Engineering & Background</h2>
+                <div class="accent-bar"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-bio scroll-reveal">
+                    <h3>Building technology that solves real problems.</h3>
+					<p>
+						I am a Bachelor of Science in Information Technology student at Pamantasan ng Lungsod ng Valenzuela (PLV) with a strong interest in networking, software development, and emerging technologies. Through academic projects, client work, and independent learning, I have gained experience designing web applications, managing databases, and developing intelligent systems.
+					</p>
+
+					<p>
+						My technical background spans Cisco networking fundamentals, PHP and JavaScript development, machine learning applications, and AI-powered recommendation systems. I enjoy creating solutions that are practical, user-focused, and capable of making a measurable impact in educational and organizational environments.
+					</p>
+                    <div class="ojt-target-card">
+                        <div class="card-icon"><i data-lucide="network"></i></div>
+                        <div class="card-text">
+                            <h4>OJT Target Role</h4>
+                            <p>Junior Network Engineer / NOC Specialist / Systems Administrator Intern</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-showcase scroll-reveal">
+                    <div class="skills-tabs" role="tablist" aria-label="Technical skills">
+                        <button class="tab-btn active" data-tab="frontend" type="button">Frontend</button>
+                        <button class="tab-btn" data-tab="backend" type="button">Backend</button>
+                        <button class="tab-btn" data-tab="tools" type="button">Tools</button>
+                    </div>
+
+                    <div class="tab-content active" id="frontend">
+                        <div class="skill-chip-grid">
+                            <span><i data-lucide="code-2"></i> HTML5</span>
+                            <span><i data-lucide="palette"></i> CSS3</span>
+                            <span><i data-lucide="braces"></i> JavaScript</span>
+                            <span><i data-lucide="smartphone"></i> Responsive UI</span>
+                            <span><i data-lucide="layout-template"></i> Vanilla JS Apps</span>
+                            <span><i data-lucide="accessibility"></i> Accessibility Basics</span>
+                        </div>
+                        <ul class="skills-bullets">
+                            <li><i data-lucide="check-circle-2"></i> Builds mobile-friendly portfolio, catalog, and dashboard interfaces.</li>
+                            <li><i data-lucide="check-circle-2"></i> Comfortable with interactive components, modals, tabs, and filters.</li>
+                            <li><i data-lucide="check-circle-2"></i> Focused on clean layouts, readable UI, and practical user flows.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="backend">
+                        <div class="skill-chip-grid">
+                            <span><i data-lucide="database"></i> PHP</span>
+                            <span><i data-lucide="server"></i> MySQL</span>
+                            <span><i data-lucide="coffee"></i> Java</span>
+                            <span><i data-lucide="plug"></i> REST APIs</span>
+                            <span><i data-lucide="bot"></i> Gemini API</span>
+                            <span><i data-lucide="table-2"></i> SQL Queries</span>
+                        </div>
+                        <ul class="skills-bullets">
+                            <li><i data-lucide="check-circle-2"></i> Creates database-backed academic and client project workflows.</li>
+                            <li><i data-lucide="check-circle-2"></i> Integrates AI-assisted recommendation and automation features.</li>
+                            <li><i data-lucide="check-circle-2"></i> Understands CRUD flows, validation, and data organization.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="tools">
+                        <div class="skill-chip-grid">
+                            <span><i data-lucide="router"></i> Cisco Packet Tracer</span>
+                            <span><i data-lucide="terminal"></i> Cisco IOS</span>
+                            <span><i data-lucide="git-branch"></i> GitHub</span>
+                            <span><i data-lucide="figma"></i> Figma</span>
+                            <span><i data-lucide="image"></i> Photoshop</span>
+                            <span><i data-lucide="shield-check"></i> Network Diagnostics</span>
+                        </div>
+                        <ul class="skills-bullets">
+                            <li><i data-lucide="check-circle-2"></i> Practices subnetting, VLAN setup, routing basics, and troubleshooting.</li>
+                            <li><i data-lucide="check-circle-2"></i> Uses design and version-control tools for polished project delivery.</li>
+                            <li><i data-lucide="check-circle-2"></i> Comfortable documenting systems, credentials, and project outputs.</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Cisco & Seminars Section -->
+        <section id="certs" class="certs-section container">
+            <div class="section-header">
+                <span class="section-tag">VERIFIED CREDENTIALS</span>
+                <h2>Cisco Certifications & Seminars</h2>
+                <div class="accent-bar"></div>
+            </div>
+
+            <!-- Horizontally Scrollable Cisco Slider (Scrollable if > 3) -->
+            <div class="certs-slider-container scroll-reveal">
+                <div class="certs-slider" id="certsSlider">
+                    <div class="certs-track">
+                        <!-- Cisco Academy Cert 1 -->
+                        <div class="cert-card primary-cert"
+                             data-badge="CISCO ACADEMY"
+                             data-title="Networking Devices and Initial Configuration"
+                             data-issuer="Cisco Networking Academy"
+                             data-desc="Validates practical expertise in configuring Cisco switches, routers, and networks. Mastered device management, Cisco IOS software, and basic switch/router startup operations essential for network maintenance."
+                             data-date="Issued 2025"
+                             data-skills="Cisco IOS, IPv4/IPv6 Setup, Router Config, VLANs"
+                             data-highlights="VLAN Configuration & Inter-VLAN routing procedures,Device security baseline setups and password encryptions,Diagnostic packet tests and switch startup routines"
+                             data-img="assets/cert_devices.png">
+                            <div class="cert-badge-ribbon">CISCO</div>
+								<div class="cert-img-container">
+									<img
+										src="assets/cert_devices.png"
+										alt="Networking Devices and Initial Configuration Certificate"
+										class="cert-image"
+									>
+
+									<div class="cert-card-overlay">
+										<span class="overlay-action">
+											<i data-lucide="scan-eye"></i> AUDIT CREDENTIAL
+										</span>
+									</div>
+								</div>
+                            <div class="cert-card-body">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-issuer">Cisco Networking Academy</p>
+                                <p class="cert-summary">Validates practical expertise in configuring Cisco switches, routers, and interfaces.</p>
+                                <div class="cert-skills-tags">
+                                    <span>Cisco IOS</span>
+                                    <span>Router Config</span>
+                                    <span>VLANs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cisco Academy Cert 2 -->
+                        <div class="cert-card primary-cert"
+                             data-badge="CISCO ACADEMY"
+                             data-title="Networking Basics"
+                             data-issuer="Cisco Networking Academy"
+                             data-desc="Covers core foundations of data communication networks, network media, packet structures, the OSI and TCP/IP models, network addressing, and diagnostic testing using standard toolsets."
+                             data-date="Issued 2025"
+                             data-skills="OSI Model, TCP/IP, Subnetting, Cabling Standards"
+                             data-highlights="OSI & TCP/IP stack reference analysis,IPv4 subnet planning and VLSM address assignments,Physical medium specs and copper ethernet cabling rules"
+                             data-img="assets/cert_basics.png">
+                            <div class="cert-badge-ribbon">CISCO</div>
+                            <div class="cert-img-container">
+								<img
+									src="assets/cert_basics.png"
+									alt="Networking Basucs"
+									class="cert-image"
+								>
+
+								<div class="cert-card-overlay">
+									<span class="overlay-action">
+										<i data-lucide="scan-eye"></i> AUDIT CREDENTIAL
+									</span>
+								</div>
+							</div>
+                            <div class="cert-card-body">
+                                <h3>Networking Basics</h3>
+                                <p class="cert-issuer">Cisco Networking Academy</p>
+                                <p class="cert-summary">Covers core foundations of networks, packet structures, addressing, and test tools.</p>
+                                <div class="cert-skills-tags">
+                                    <span>OSI Model</span>
+                                    <span>Subnetting</span>
+                                    <span>TCP/IP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seminars and Workshops (Vertically Scrollable, max-height = 6 visible) -->
+            <div class="seminars-container scroll-reveal">
+                <h3>Additional Seminars & Technical Workshops</h3>
+                <div class="seminars-scrollbox" id="seminarsScrollbox">
+                    <div class="seminars-list">
+                        <!-- Seminar 1 -->
+                        
+						<div class="seminar-item"
+							 data-title="IT Developer Life Hacks: Working SMART as a Computer Programmer"
+							 data-organizer="PLV IT Department"
+							 data-date="April 20, 2024"
+							 data-img="assets/seminar_programmer.png">
+							<div class="seminar-icon"><i data-lucide="code-2"></i></div>
+							<div class="seminar-info">
+								<h4>IT Developer Life Hacks: Working SMART as a Computer Programmer</h4>
+								<p>Seminars and Colloquia 2024 • Participant</p>
+							</div>
+						</div>
+
+						<!-- Seminar 2 -->
+						<div class="seminar-item"
+							 data-title="Press Start to Level Up: Best Practices in Game Testing"
+							 data-organizer="PLV IT Department"
+							 data-date="April 24, 2024"
+							 data-img="assets/seminar_gametesting.png">
+							<div class="seminar-icon"><i data-lucide="gamepad-2"></i></div>
+							<div class="seminar-info">
+								<h4>Press Start to Level Up: Best Practices in Game Testing</h4>
+								<p>Seminars and Colloquia 2024 • Certificate of Appreciation</p>
+							</div>
+						</div>
+
+						<!-- Seminar 3 -->
+						<div class="seminar-item"
+							 data-title="Strategic Project Management: Aligning Projects with Organizational Goals"
+							 data-organizer="PLV IT Department"
+							 data-date="April 24, 2024"
+							 data-img="assets/seminar_projectmanagement.png">
+							<div class="seminar-icon"><i data-lucide="briefcase"></i></div>
+							<div class="seminar-info">
+								<h4>Strategic Project Management</h4>
+								<p>Project Management Seminar • Participant</p>
+							</div>
+						</div>
+
+						<!-- Seminar 4 -->
+						<div class="seminar-item"
+							 data-title="That IT Thing Called Multimedia"
+							 data-organizer="PLV IT Department"
+							 data-date="April 25, 2024"
+							 data-img="assets/seminar_multimedia.png">
+							<div class="seminar-icon"><i data-lucide="image"></i></div>
+							<div class="seminar-info">
+								<h4>That IT Thing Called Multimedia</h4>
+								<p>Seminars and Colloquia 2024 • Participant</p>
+							</div>
+						</div>
+
+						<!-- Seminar 5 -->
+						<div class="seminar-item"
+							 data-title="Launch Your Tech Career: The High-Demand Skillset of a Full Stack Web Developer"
+							 data-organizer="PLV IT Department"
+							 data-date="April 25, 2024"
+							 data-img="assets/seminar_fullstack.png">
+							<div class="seminar-icon"><i data-lucide="monitor-smartphone"></i></div>
+							<div class="seminar-info">
+								<h4>Launch Your Tech Career</h4>
+								<p>Full Stack Web Development Seminar • Participant</p>
+							</div>
+						</div>
+
+						<!-- Seminar 6 -->
+						<div class="seminar-item"
+							 data-title="Securing Connections: Strategies for Cybersecurity and Network Operations"
+							 data-organizer="PLV IT Department"
+							 data-date="April 25, 2024"
+							 data-img="assets/seminar_cybersecurity.png">
+							<div class="seminar-icon"><i data-lucide="shield-check"></i></div>
+							<div class="seminar-info">
+								<h4>Securing Connections</h4>
+								<p>Cybersecurity & Network Operations Seminar</p>
+							</div>
+						</div>
+
+						<!-- Seminar 7 -->
+						<div class="seminar-item"
+							 data-title="Deep Impact: The Impact of AI to the Future of Web Development"
+							 data-organizer="PLV IT Department"
+							 data-date="April 25, 2024"
+							 data-img="assets/seminar_ai_webdev.png">
+							<div class="seminar-icon"><i data-lucide="brain"></i></div>
+							<div class="seminar-info">
+								<h4>Deep Impact: AI and the Future of Web Development</h4>
+								<p>Artificial Intelligence Seminar • Participant</p>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section container">
+            <div class="section-header">
+                <span class="section-tag">PACKET LOGS</span>
+                <h2>Technical Projects & Showcase</h2>
+                <div class="accent-bar"></div>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters scroll-reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="networking">Networking & AI</button>
+                <button class="filter-btn" data-filter="web">Web Applications</button>
+                <button class="filter-btn" data-filter="creative">Software & Creative</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="projects-grid">
+                <!-- ARTA Website -->
+                <div class="project-card scroll-reveal" 
+                     data-category="web"
+                     data-badge="PHP & Database"
+                     data-title="Anti Red Tape Authority (ARTA) Web Portal"
+                     data-desc="A secure administrative management system built for local government compliance. Integrates PHP object-oriented workflows and relational database management. Features interactive complaint routing and verification analytics."
+                     data-tech="PHP,MySQL,JavaScript,HTML5,CSS3"
+                     data-img="assets/ArtaCompliantSurvey.png"
+                     data-demo="https://github.com/chris-dev-it/arta-web-portal"
+                     data-code="https://github.com/chris-dev-it/arta-web-portal"
+                     data-highlights="Interactive citizen complaint dispatch system,Parameterized queries defending against SQL injection attacks,100% normalized relational database structure">
+                    <div class="project-img-container">
+                        <img src="assets/ArtaCompliantSurvey.png" alt="ARTA Website Mockup" class="project-img">
+                        <span class="project-badge">PHP & Database</span>
+                        <div class="project-card-overlay">
+                            <span class="overlay-action"><i data-lucide="scan-eye"></i> PROBE SYSTEMS</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Anti Red Tape Authority (ARTA) Web Portal</h3>
+                        <p class="project-text">
+                            A highly secure management system designed to streamline government services and complaint filings. Built with a responsive JavaScript frontend and PHP backend, connected to a robust normalized database.
+                        </p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                         
+                        </div>
+                        <div class="project-links">
+                            <span class="project-feat"><i data-lucide="database"></i> Normalized DB Structure</span>
+                            <span class="project-feat"><i data-lucide="lock"></i> SQLi Protected</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career matching App -->
+                <div class="project-card scroll-reveal" 
+                     data-category="networking"
+                     data-badge="AI Integration"
+                     data-title="Career Matching Engine (Gemini API)"
+                     data-desc="An AI-assisted career recommendation system that analyzes student profiles, technical skills, and preferences to generate career path and OJT recommendations aligned with their qualifications and interests."
+					 data-tech="Gemini API,Node.js,JavaScript,JSON Processing,Recommendation Logic"
+                     data-img="assets/AICareerPath.png"
+                     data-demo="https://career-matching.chris-dev.it"
+                     data-code="https://github.com/chris-dev-it/gemini-career-matching"
+                     data-highlights="AI-assisted career recommendations,Student profile and skills analysis,OJT recommendation generation">
+                    <div class="project-img-container">
+                        <img src="assets/AICareerPath.png" alt="Gemini Career Matching Mockup" class="project-img">
+                        <span class="project-badge">AI Integration</span>
+                        <div class="project-card-overlay">
+                            <span class="overlay-action"><i data-lucide="scan-eye"></i> PROBE SYSTEMS</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+						<h3>Career Matching Engine (Gemini API)</h3>
+						<p class="project-text">
+							Developing an AI-assisted career recommendation system that analyzes student profiles, technical skills, and preferences to generate career path and OJT recommendations aligned with their qualifications and interests.
+						</p>
+					<div class="project-tech">
+						<span>Gemini API</span>
+						<span>Node.js / JavaScript</span>
+						<span>JSON Processing</span>
+						<span>Recommendation Logic</span>
+					</div>
+					<div class="project-links">
+						<span class="project-feat"><i data-lucide="sparkles"></i> AI Recommendations</span>
+						<span class="project-feat"><i data-lucide="loader"></i> Active Development</span>
+					</div>
+				</div>
+                </div>
+
+                <!-- Activeness monitoring AI -->
+                <div class="project-card scroll-reveal" 
+                     data-category="networking"
+                     data-badge="Machine Learning"
+					 data-title="Student Academic Motivation Predictor"
+					 data-desc="A machine learning-based system that predicts student academic motivation levels using attendance records, classroom participation, and homework completion data to support educational monitoring and intervention."
+					 data-tech="Python,Machine Learning,FastAPI,HTML/CSS/JavaScript"
+                     data-img="assets/StudentActive.png"
+                     data-demo="https://huggingface.co/spaces/chris-dev-it/student-activeness-classifier"
+                     data-code="https://github.com/chris-dev-it/student-activeness"
+                     data-highlights="Academic motivation prediction,Student performance analytics,Educational decision support">
+                    <div class="project-img-container">
+                        <img src="assets/StudentActive.png" alt="Student Activeness AI Mockup" class="project-img">
+                        <span class="project-badge">Computer Vision</span>
+                        <div class="project-card-overlay">
+                            <span class="overlay-action"><i data-lucide="scan-eye"></i> PROBE SYSTEMS</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+						<h3>Student Academic Motivation Predictor</h3>
+						<p class="project-text">
+							Developed a machine learning-based system that predicts student academic motivation levels using attendance records, classroom participation, and homework completion data to support educational monitoring and intervention.
+						</p>
+
+						<div class="project-tech">
+							<span>Python</span>
+							<span>Machine Learning</span>
+							<span>FastAPI</span>
+							<span>HTML/CSS/JavaScript</span>
+						</div>
+
+						<div class="project-links">
+							<span class="project-feat"><i data-lucide="brain"></i> Motivation Prediction</span>
+							<span class="project-feat"><i data-lucide="bar-chart-3"></i> Student Analytics</span>
+						</div>
+					</div>
+                </div>
+
+                <!-- AVC Murphy Bed website -->
+                <div class="project-card scroll-reveal" 
+                     data-category="web"
+                     data-badge="Client Project"
+                     data-title="AVC Murphy Bed Business Website"
+                     data-desc="A production client website developed for AVC Murphy Bed to showcase custom products through a responsive design, optimized performance, and intuitive user experience."
+					 data-tech="HTML5,CSS3,Vanilla JavaScript,Responsive Design"
+                     data-img="assets/AVCMurphy.png"
+                     data-demo="https://avcmurphybed.com"
+                     data-code="https://github.com/chris-dev-it/avc-murphy-bed"
+                     data-highlights="Responsive product showcase,Client-focused design implementation,Performance-optimized front-end">
+                    <div class="project-img-container">
+                        <img src="assets/AVCMurphy.png" alt="AVC Murphy Bed Client Website Mockup" class="project-img">
+                        <span class="project-badge">Client Project</span>
+                        <div class="project-card-overlay">
+                            <span class="overlay-action"><i data-lucide="scan-eye"></i> PROBE SYSTEMS</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AVC Murphy Bed Business Website</h3>
+                        <p class="project-text">
+                            A production client website crafted specifically to market high-end custom Murphy beds. Focuses on premium, minimalist visual layouts, fast loading speeds, SEO optimization, and a fluid user journey.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3 (Vanilla)</span>
+                            <span>Vanilla JS</span>
+                            <span>SEO best practices</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-feat"><i data-lucide="check"></i> 100% Client Satisfied</span>
+                            <span class="project-feat"><i data-lucide="search"></i> Optimized Google Indexing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Java Game -->
+                <div class="project-card scroll-reveal" 
+                     data-category="creative"
+                     data-badge="Game Development"
+                     data-title="Retro Arcade Adventure Game"
+                     data-desc="A native 2D pixel platformer game written entirely in Java. Employs advanced game loop architectures, custom rectangle/aabb collision formulas, active state transition managers, and multi-channel background audio mixers."
+                     data-tech="Java Standard,Swing & AWT,2D rendering,OOP Principles"
+                     data-img="assets/brink.png"
+                     data-demo="https://github.com/chris-dev-it/retro-java-arcade/releases/tag/v1.0"
+                     data-code="https://github.com/chris-dev-it/retro-java-arcade"
+                     data-highlights="Custom collision detection engine,Sprite animation and state management,60 FPS game loop architecture">
+                    <div class="project-img-container">
+                        <img src="assets/brink.png" alt="Java Game Mockup" class="project-img">
+                        <span class="project-badge">Game Development</span>
+                        <div class="project-card-overlay">
+                            <span class="overlay-action"><i data-lucide="scan-eye"></i> PROBE SYSTEMS</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Retro Arcade Adventure Game</h3>
+                        <p class="project-text">
+                            Created a fully functioning 2D arcade game in Java using standard GUI and canvas rendering. Implements custom collision algorithms, state machines, sprite animations, and custom audio pipelines.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java Standard</span>
+                            <span>Java AWT & Swing</span>
+                            <span>OOP Principles</span>
+                            <span>Audio Engine</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-feat"><i data-lucide="gamepad-2"></i> Custom Collision Engine</span>
+                            <span class="project-feat"><i data-lucide="code-2"></i> 100% Native Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photoshop Portfolio -->
+                <div class="project-card scroll-reveal" 
+                     data-category="creative"
+                     data-badge="Creative Assets"
+                     data-title="Creative Design & Photoshop Portfolio"
+                     data-desc="A professional gallery showcasing digital photo manipulations, marketing layouts, customized icon vector graphs, and brand visual guidelines. Demonstrates advanced layer mask structures, gradient mapping, and precise color grading."
+                     data-tech="Adobe Photoshop,Digital Design,Vector Asset Creation,Color Grading"
+                     data-img="assets/project_photoshop.png"
+                     data-demo="https://behance.net/chris-creative"
+                     data-code="https://dribbble.com/chris-creative"
+                     data-highlights="Non-destructive smart filter layouts,High-resolution vector assets for marketing banners,Harmonious custom color maps and masking workflows">
+                    <div class="project-img-container">
+                        <img src="assets/project_photoshop.png" alt="Photoshop Designs Mockup" class="project-img">
+                        <span class="project-badge">Creative Assets</span>
+                        <div class="project-card-overlay">
+                            <span class="overlay-action"><i data-lucide="scan-eye"></i> PROBE SYSTEMS</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Creative Design & Photoshop Portfolio</h3>
+                        <p class="project-text">
+                            A collection of premium visual design work, marketing assets, vector illustrations, and photograph edits. Combines advanced masking, lighting filters, and spatial compositing techniques.
+                        </p>
+                        <div class="project-tech">
+                            <span>Adobe Photoshop</span>
+                            <span>Digital Art</span>
+                            <span>Vector Rendering</span>
+                            <span>Photo Manipulation</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-feat"><i data-lucide="layers"></i> Layer Compositions</span>
+                            <span class="project-feat"><i data-lucide="palette"></i> Curated Color Harmonies</span>
+                        </div>
+                    </div>
+                </div>
+				<div class="project-card scroll-reveal" 
+                     data-category="web"
+                     data-badge="Creative Assets"
+                     data-title="Creative Design & Photoshop Portfolio"
+                     data-desc="A professional gallery showcasing digital photo manipulations, marketing layouts, customized icon vector graphs, and brand visual guidelines. Demonstrates advanced layer mask structures, gradient mapping, and precise color grading."
+                     data-tech="Adobe Photoshop,Digital Design,Vector Asset Creation,Color Grading"
+                     data-img="assets/VITSinventory.png"
+                     data-demo="https://behance.net/chris-creative"
+                     data-code="https://dribbble.com/chris-creative"
+                     data-highlights="Non-destructive smart filter layouts,High-resolution vector assets for marketing banners,Harmonious custom color maps and masking workflows">
+                    <div class="project-img-container">
+                        <img src="assets/VITSinventory.png" alt="Photoshop Designs Mockup" class="project-img">
+                        <span class="project-badge">Web App</span>
+                        <div class="project-card-overlay">
+                            <span class="overlay-action"><i data-lucide="scan-eye"></i> PROBE SYSTEMS</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>PLV VITS Inventory Management</h3>
+                        <p class="project-text">
+                            A web-based inventory management system for PLV that streamlines the tracking, monitoring, and management of equipment, supplies, and assets to improve accuracy, efficiency, and accountability.
+                        </p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                           
+                        </div>
+                        <div class="project-links">
+							<span class="project-feat"><i data-lucide="package"></i> Asset Tracking</span>
+							<span class="project-feat"><i data-lucide="clipboard-list"></i> Inventory Management</span>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cisco IOS Terminal Widget Section -->
+        <section id="terminal" class="terminal-section container">
+            <div class="section-header">
+                <span class="section-tag">CONSOLE SESSION</span>
+                <h2>Cisco Catalysts 2960 - Virtual Console</h2>
+                <div class="accent-bar"></div>
+            </div>
+
+            <div class="terminal-container scroll-reveal">
+                <div class="terminal-bar">
+                    <div class="terminal-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="terminal-title"><i data-lucide="terminal"></i> Switch_2960_Chris#console</span>
+                    <div class="terminal-status"><span class="terminal-status-dot"></span> CONNECTED</div>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-line">Cisco IOS Software, C2960 Software (C2960-LANBASE-M), Version 12.2(25)SEE2, RELEASE SOFTWARE (fc1)</div>
+                    <div class="terminal-line">System bootstrap, Version 12.1(11r)AX, RELEASE SOFTWARE (fc1)</div>
+                    <div class="terminal-line">Copyright (c) 1986-2025 by Cisco Systems, Inc.</div>
+                    <div class="terminal-line">&nbsp;</div>
+                    <div class="terminal-line text-amber">Initializing packet analyzer engines... [OK]</div>
+                    <div class="terminal-line text-amber">Active interfaces: FastEthernet0/1 through 0/24 [UP]</div>
+                    <div class="terminal-line text-blue">Establishing link state authentication... CONNECTED.</div>
+                    <div class="terminal-line">&nbsp;</div>
+                    <div class="terminal-line">Press ENTER or type <span class="text-copper font-bold">help</span> to view available system commands.</div>
+                    <div class="terminal-line">&nbsp;</div>
+                    
+                    <div class="terminal-history" id="terminalHistory">
+                        <!-- CLI commands log dynamically here -->
+                    </div>
+                    
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt">Switch_Chris#</span>
+                        <input type="text" id="terminalInput" autocomplete="off"  placeholder="Type 'help'...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <div class="section-header">
+                <span class="section-tag">ESTABLISH HANDSHAKE</span>
+                <h2>Connect & Collaborate</h2>
+                <div class="accent-bar"></div>
+            </div>
+
+            <div class="contact-grid scroll-reveal">
+                <div class="contact-info">
+                    <h3>Open to opportunities and new challenges.</h3>
+					<p>
+						Whether it's networking, software development, IT support, or emerging technologies, I'm always interested in projects that help me learn, contribute, and gain real-world experience.
+					</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h5>Direct Transmission</h5>
+                                <p>caspechristiandaniel@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <h5>Mobile Interface</h5>
+                                <p>+63 976 327 2823</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="linkedin"></i>
+                            <div>
+                                <h5>LinkedIn Profile</h5>
+                                <p><a href="https://linkedin.com/in/christian-daniel-caspe" target="_blank" class="contact-link">christian-daniel-caspe</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h5>Current Node Location</h5>
+                                <p>17 A Bonifacio, Arty Subd., Karuhatan, Valenzuela av</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="network"></i>
+                            <div>
+                                <h5>Specialty Focus</h5>
+                                <p>Cisco Routing & Switching / Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/caspechristiandaniel@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New portfolio contact packet">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName">Host Name / Identifier</label>
+                                <input type="text" id="formName" name="name" required placeholder="e.g. Recruiters Node" autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">IP/Email Address</label>
+                                <input type="email" id="formEmail" name="email" required placeholder="name@domain.com" autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject">Handshake Protocol / Subject</label>
+                            <input type="text" id="formSubject" name="subject" required placeholder="e.g. Network OJT Opportunity">
+                        </div>
+                        <div class="form-group">
+                            <label for="formMsg">Payload / Message Details</label>
+                            <textarea id="formMsg" name="message" rows="5" required placeholder="Write details here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Transmit Packet <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    <div id="formFeedback" class="form-feedback hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Chris. All rights reserved.</p>
+            <div class="footer-meta">
+                <span><i data-lucide="rss"></i> WAN: ONLINE</span>
+                <span><i data-lucide="info"></i> IOS-XE Version 15.6.3</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal Overlay -->
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-grid">
+                <div class="modal-media">
+                    <img id="modalImg" src="" alt="Project Image">
+                </div>
+                <div class="modal-info">
+                    <div class="modal-badge-container">
+                        <span id="modalBadge" class="project-badge">PHP & Database</span>
+                    </div>
+                    <h3 id="modalTitle">Project Title</h3>
+                    <p id="modalDesc" class="modal-text">Detailed project description goes here...</p>
+                    
+                    <div class="modal-section">
+                        <h4>Technologies Utilized</h4>
+                        <div id="modalTech" class="project-tech">
+                            <!-- Tech tags go here -->
+                        </div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h4>System Capabilities & Highlights</h4>
+                        <ul id="modalHighlights" class="modal-highlights">
+                            <!-- highlights bulleted list -->
+                        </ul>
+                    </div>
+
+                    <div class="modal-actions">
+                        <a id="modalDemoLink" href="#" target="_blank" class="btn btn-primary">
+                            Launch Project Live <i data-lucide="external-link"></i>
+                        </a>
+                        <a id="modalCodeLink" href="#" target="_blank" class="btn btn-secondary">
+                            Verify Codebase <i data-lucide="code-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cisco Certificate Details Modal Overlay -->
+    <div id="certModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close" id="certModalClose" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-grid">
+                <div class="modal-media cert-modal-media">
+                    <div id="certModalImgContainer" class="cert-upload-placeholder">
+                        <i data-lucide="award" class="cert-placeholder-icon"></i>
+                        <span>VERIFIED CISCO CREDENTIAL</span>
+                        <p class="placeholder-sub">Cisco Networking Academy Certified scan is securely verified.</p>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-badge-container">
+                        <span id="certModalBadge" class="cisco-badge"><i data-lucide="network"></i> CISCO ACADEMY</span>
+                    </div>
+                    <h3 id="certModalTitle">Certificate Title</h3>
+                    <p class="cert-issuer text-gradient" id="certModalIssuer">Cisco Networking Academy</p>
+                    <p id="certModalDesc" class="modal-text">Detailed credential objectives go here...</p>
+                    
+                    <div class="modal-section">
+                        <h4>Acquired Skills Portfolio</h4>
+                        <div id="certModalTech" class="project-tech">
+                            <!-- Skill badges -->
+                        </div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h4>Curriculum Mastery Details</h4>
+                        <ul id="certModalHighlights" class="modal-highlights">
+                            <!-- Highlights list -->
+                        </ul>
+                    </div>
+
+                    <div class="modal-actions" style="margin-top: 15px; display:flex; gap:20px; align-items:center;">
+                        <span class="cert-date" id="certModalDate" style="font-size:0.85rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:6px;"><i data-lucide="calendar"></i> Issued 2025</span>
+                        <span class="cert-status" style="color: var(--color-success); font-weight:700; font-size:0.85rem; display:inline-flex; align-items:center; gap:6px;"><i data-lucide="shield-check"></i> VERIFIED SYSTEM LINK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seminar Lightbox Modal Overlay (Only certificate photo with mini details below) -->
+    <div id="seminarModal" class="modal-overlay">
+        <div class="modal-card lightbox-card">
+            <button class="modal-close" id="seminarModalClose" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="lightbox-content">
+                <div class="lightbox-media">
+                    <div class="seminar-upload-placeholder">
+                        <i data-lucide="file-check-2" class="lightbox-placeholder-icon"></i>
+                        <span>SEMINAR CERTIFICATE PHOTO</span>
+                        <p class="placeholder-sub">caspechristiandaniel@gmail.com verified attendee badge</p>
+                    </div>
+                </div>
+                <div class="lightbox-details">
+                    <h3 id="seminarModalTitle">Seminar Title</h3>
+                    <p id="seminarModalOrganizer" class="text-copper">Regional IT Congress • Certificate of Completion</p>
+                    <p id="seminarModalDate" class="text-muted">Issued November 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>

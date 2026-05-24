@@ -1,0 +1,40 @@
+CHRISTIAN DANIEL CASPE
+BSIT Student | Networking | Full-Stack Development | AI-Assisted Systems
+
+Email: caspechristiandaniel@gmail.com
+Phone: +63 976 327 2823
+LinkedIn: https://linkedin.com/in/christian-daniel-caspe
+Location: Valenzuela, Philippines
+
+PROFILE
+Bachelor of Science in Information Technology student at Pamantasan ng Lungsod ng Valenzuela with hands-on experience in networking, web development, databases, and AI-powered academic systems. Interested in network-based OJT roles where practical troubleshooting, documentation, and system deployment skills can be applied.
+
+TARGET ROLES
+Junior Network Engineer Intern
+NOC Specialist Intern
+Systems Administrator Intern
+Web Development Intern
+
+TECHNICAL SKILLS
+Frontend: HTML5, CSS3, JavaScript, responsive UI, interactive components
+Backend: PHP, MySQL, Java, REST API concepts, Gemini API integration
+Networking: Cisco IOS basics, subnetting, VLAN concepts, routing and switching fundamentals
+Tools: Cisco Packet Tracer, GitHub, Figma, Adobe Photoshop, network diagnostics
+
+PROJECT EXPERIENCE
+AI Career Path Recommendation System
+Built an AI-assisted recommendation system using Gemini API concepts for career guidance.
+
+ARTA Compliance Survey Platform
+Developed survey and compliance workflows with database-backed reporting features.
+
+AVC Murphy Bed Business Website
+Created a responsive client-facing website with product catalog presentation and SEO-friendly structure.
+
+Student Engagement and Activeness Classifier
+Worked on a computer vision concept for identifying student engagement states.
+
+CERTIFICATIONS AND TRAINING
+Cisco Networking Academy - Networking Devices and Initial Configuration
+Cisco Networking Academy - Networking Basics
+Technical seminars in IT development, project management, and full-stack web development
